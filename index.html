@@ -34,10 +34,10 @@
         <table id="tabla_compra">
           <tbody>
             <tr id="conceptos">
-              <td><strong>Producto</strong></td>
-              <td><strong>PVP</strong></td>
-              <td><strong>Uds.</strong></td>
-              <td><strong>Eur.</strong></td>
+              <th><strong>Producto</strong></th>
+              <th><strong>PVP</strong></th>
+              <th><strong>Uds.</strong></th>
+              <th><strong>Eur.</strong></th>
             </tr>
             <tr>
               <td><strong>Botella Oleum 500 ml</strong> (en caja de 12 unidades)</td>
@@ -81,68 +81,77 @@
         </p>
 
         <form action="#">
-          <div id="datos_personales">
-            <p class="t3">Datos personales</p>
-            <div class="campo_form">
-              <label for="empresa">Empresa </label>
-              <input id="empresa" name="empresa" type="text"/>
+          <fieldset>
+            <legend>Datos personales</legend>
+            <div id="datos_personales">
+              <p class="t3">Datos personales</p>
+              <div class="campo_form">
+                <label for="empresa">Empresa </label>
+                <input id="empresa" name="empresa" type="text"/>
+              </div>
+              <div class="campo_form">
+                <label for="nombre" class="obligatorio">Nombre </label>
+                <input id="nombre" name="nombre" type="text" required/>
+              </div>
+              <div class="campo_form">
+                <label for="apellidos" class="obligatorio">Apellidos </label>
+                <input id="apellidos" name="apellidos" type="text" required/>
+              </div>
+              <div class="campo_form">
+                <label for="email" class="obligatorio">e-mail </label>
+                <input id="email" name="email" type="text" required/>
+              </div>
+              <div class="campo_form">
+                <label for="tlf" class="obligatorio">Tlf. de contacto </label>
+                <input id="tlf" name="tlf" type="text" required/>
+              </div>
+              <div class="campo_form">
+                <label for="nif">NIF/CIF </label>
+                <input id="nif" name="nif" type="text" required/>
+              </div>
             </div>
-            <div class="campo_form">
-              <label for="nombre" class="obligatorio">Nombre </label>
-              <input id="nombre" name="nombre" type="text" required/>
-            </div>
-            <div class="campo_form">
-              <label for="apellidos" class="obligatorio">Apellidos </label>
-              <input id="apellidos" name="apellidos" type="text" required/>
-            </div>
-            <div class="campo_form">
-              <label for="email" class="obligatorio">e-mail </label>
-              <input id="email" name="email" type="text" required/>
-            </div>
-            <div class="campo_form">
-              <label for="tlf" class="obligatorio">Tlf. de contacto </label>
-              <input id="tlf" name="tlf" type="text" required/>
-            </div>
-            <div class="campo_form">
-              <label for="nif">NIF/CIF </label>
-              <input id="nif" name="nif" type="text" required/>
-            </div>
-          </div>
+          </fieldset>
 
-          <div id="datos_envio">
-            <p class="t3">Datos de envío</p>
-            <div class="campo_form">
-              <label for="dir" class="obligatorio">Dirección </label>
-              <input id="dir" name="dir" type="text" required/>
+          <fieldset>
+            <legend>Datos de envío</legend>
+            <div id="datos_envio">
+              <p class="t3">Datos de envío</p>
+              <div class="campo_form">
+                <label for="dir" class="obligatorio">Dirección </label>
+                <input id="dir" name="dir" type="text" required/>
+              </div>
+              <div class="campo_form">
+                <label for="localidad" class="obligatorio">Localidad </label>
+                <input id="localidad" name="localidad" type="text" required/>
+              </div>
+              <div class="campo_form">
+                <label for="provincia" class="obligatorio">Provincia </label>
+                <input id="provincia" name="provincia" type="text" required/>
+              </div>
+              <div class="campo_form">
+                <label for="cp" class="obligatorio">CP </label>
+                <input id="cp" name="cp" type="text" required/>
+              </div>
+              <div class="campo_form">
+                <label for="horario">Horario de entrega </label>
+                <select name="horario" id="horario">
+                  <optgroup label="horarios">
+                    <option selected="selected" value="all">Todo el día</option>
+                    <option value="a">De 9:00 a 14:00 horas</option>
+                    <option value="b">De 14:00 a 19:00 horas</option>
+                  </optgroup>
+                </select>
+              </div>
             </div>
-            <div class="campo_form">
-              <label for="localidad" class="obligatorio">Localidad </label>
-              <input id="localidad" name="localidad" type="text" required/>
-            </div>
-            <div class="campo_form">
-              <label for="provincia" class="obligatorio">Provincia </label>
-              <input id="provincia" name="provincia" type="text" required/>
-            </div>
-            <div class="campo_form">
-              <label for="cp" class="obligatorio">CP </label>
-              <input id="cp" name="cp" type="text" required/>
-            </div>
-            <div class="campo_form">
-              <label for="horario">Horario de entrega </label>
-              <select name="horario" id="horario">
-                <optgroup label="horarios">
-                  <option selected="selected" value="all">Todo el día</option>
-                  <option value="a">De 9:00 a 14:00 horas</option>
-                  <option value="b">De 14:00 a 19:00 horas</option>
-                </optgroup>
-              </select>
-            </div>
-          </div>
+          </fieldset>
 
-          <div id="observaciones">
-            <label for="obs">Observaciones:</label><br />
-            <textarea rows="6" cols="80" id="obs" name="obs"> </textarea>
-          </div>
+          <fieldset>
+            <legend>Observaciones</legend>
+            <div id="observaciones">
+              <label for="obs">Observaciones:</label><br />
+              <textarea rows="6" cols="80" id="obs" name="obs"> </textarea>
+            </div>
+          </fieldset>
 
           <p id="submit">
             <input value="Realizar Pedido" type="submit" />

@@ -88,7 +88,7 @@
 	  padding: 0.5em;
 	}
 	
-	#conceptos td{
+	#conceptos th{
 	  color: white;
 	  background-color: #b50000;
 		border: 1px solid #ccc;
@@ -136,7 +136,7 @@
 		float: left;			
 	}
   
-	#observaciones{	
+	#observaciones{
 	  clear: both; 
 		padding-top: 2em;
   }
