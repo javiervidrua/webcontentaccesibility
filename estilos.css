@@ -27,7 +27,7 @@
 	  font-size: 1.2em;
 	  font-weight: bold;
 		color: #fff;
-		background-color: #CC9900;
+		background-color: #b50000;
 	  padding: 0.3em;
 	}
 	
@@ -69,7 +69,7 @@
 		font-weight: bold;
 	  font-size: 1.2em;
 		font-style: italic;
-		color: #999;
+		color: #b50000;
 	}	
 	
 	
@@ -89,7 +89,8 @@
 	}
 	
 	#conceptos td{
-	  background-color: #f0f0f0;
+	  color: white;
+	  background-color: #b50000;
 		border: 1px solid #ccc;
 	}
 	
@@ -105,7 +106,7 @@
 
 
 /************************************************
-*       Datos de facturación (formulario)      *
+*       Datos de facturaciï¿½n (formulario)      *
 ************************************************/	
 	
 	
@@ -162,7 +163,7 @@
 	}
 
 /************************************************
-*          Garantías y pie de página           *
+*          Garantï¿½as y pie de pï¿½gina           *
 ************************************************/
 
 
